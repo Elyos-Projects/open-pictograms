@@ -1,0 +1,34 @@
+{
+  "id": "open-pictograms-design-001",
+  "title": "Author the pictogram design system v1 (grid/stroke/palette/abstraction/a11y/safety rules)",
+  "project": "open-pictograms",
+  "type": "design-spec",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["accessibility", "communication", "wayfinding", "open-culture", "design"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "People who cannot read the local language - low-literacy and pre-literacy adults, non-speaking AAC users, refugees, and people in emergencies - depend on pictograms to be understood. Existing open symbol sets are often non-commercial or share-alike licensed, stylistically inconsistent, or untested with target users. Before any symbol is drawn at scale, open-pictograms needs a single, versioned design system so that symbols authored by many parallel AI sessions are visually consistent, accessible, dignified, and safe.",
+  "objective": "Write and publish version 1 of the design system that all draw/batch tasks will follow: grid, stroke, palette, abstraction level, SVG accessibility, naming, monochrome/directional variants, and the privileged-safety-subset rules.",
+  "acceptanceCriteria": [
+    "Specifies canvas/viewBox, grid, stroke weight, corner treatment, abstraction level, and fill/stroke rules for visual consistency.",
+    "Defines the color palette plus a strict monochrome/high-contrast variant (print, low-vision, distance wayfinding) and directional (RTL/mirror) variant rules.",
+    "Requires SVG accessibility (title/role=img) and a stable naming convention, and is machine-checkable by the style-lint gate.",
+    "Includes a safety-subset section (stricter comprehension threshold, domain-expert sign-off, and a 'not certified safety signage / not medical advice' disclaimer) and a do/don't gallery covering dignity and cultural pitfalls.",
+    "Requires original vector geometry only (no traced/copyrighted art; AIGA/DOT public-domain references permitted) and is published, versioned, and licensed CC-BY-4.0."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\open-pictograms\\PLAN.md",
+    "C:\\code\\elyos\\docs\\good-deed-definition.md",
+    "ISO 9186 (graphical-symbol comprehensibility method - reference only, not redistributed)",
+    "AIGA/DOT Symbol Signs (public domain)",
+    "Creative Commons CC-BY-4.0; SIL Open Font License"
+  ],
+  "output": "A versioned design-system document (design-system/design-system.md) plus the machine-checkable style rules, CC-BY-4.0, covering grid/stroke/palette/abstraction, SVG accessibility, naming, monochrome/directional variants, originality/license policy, and the safety-subset rules.",
+  "requestor": "jdev1977",
+  "verifiedNeed": true,
+  "outputLicense": "CC-BY-4.0"
+}
