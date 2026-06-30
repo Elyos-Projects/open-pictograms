@@ -1,0 +1,37 @@
+{
+  "id": "open-pictograms-maint-002",
+  "title": "Re-check safety subset against standard updates",
+  "project": "open-pictograms",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["accessibility", "communication", "open-culture", "design"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Safety signs and hazard communication standards (ISO 7010, ISO 7001, GHS) are revised periodically. Any revision that changes the required meaning or visual convention of a concept referenced by an open-pictograms safety-aligned symbol could cause harm if the symbol is not updated. This maintenance task schedules a periodic re-check of the safety subset against current standards, triggering redesign-and-retest or withdrawal for any symbol whose concept alignment is affected.",
+  "objective": "Re-check all safety-aligned symbols against the current versions of referenced standards (ISO 7010, ISO 7001, GHS, AIGA/DOT); identify any symbols whose concept alignment is affected; trigger redesign-and-retest or withdrawal as appropriate.",
+  "acceptanceCriteria": [
+    "Review covers all safety-aligned symbols in the set; compares each against the current version of its referencedStandard (ISO 7010, ISO 7001, GHS, AIGA/DOT) and flags any change in required meaning, recommended visual convention, or concept scope.",
+    "For any flagged symbol: triggers a redesign-and-retest cycle (meeting the stricter ≥85% correct + <5% critical confusion threshold) or formal withdrawal from the shipped set; no out-of-date safety symbol remains in the released set.",
+    "Domain-expert sign-off is re-obtained for any redesigned safety symbol before it is re-released; the 'not certified safety signage / not medical advice' disclaimer is re-confirmed on all safety-aligned symbols.",
+    "Re-check findings are documented in a maintenance report (including: standards versions reviewed, symbols affected, actions taken, sign-off records); published in docs/maintenance/.",
+    "Maintenance report is versioned and licensed CC-BY-4.0; any symbol metadata updated to reflect the new review date."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\open-pictograms\\PLAN.md",
+    "open-pictograms-batch-004 (safety-aligned subset)",
+    "open-pictograms-writing-002 (safety-review SOP)",
+    "ISO 7010 (safety signs — concepts only, standard not redistributed)",
+    "ISO 7001 (public information symbols — concepts only)",
+    "GHS (hazard pictograms — concepts only)",
+    "AIGA/DOT Symbol Signs (public domain)",
+    "Creative Commons CC-BY-4.0"
+  ],
+  "output": "docs/maintenance/safety-subset-recheck-<date>.md — a maintenance report documenting standards versions reviewed, symbols flagged, redesign/withdrawal actions taken, and expert sign-offs; updated metadata records; licensed CC-BY-4.0.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

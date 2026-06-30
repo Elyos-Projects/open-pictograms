@@ -1,0 +1,33 @@
+{
+  "id": "open-pictograms-code-001",
+  "title": "Build pipeline v0: SVG normalize + style-lint + PNG/sprite/OBF export",
+  "project": "open-pictograms",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["accessibility", "communication", "wayfinding", "design", "tooling"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "open-pictograms defines SVG as the single source of truth; PNG rasters, SVG sprites, and OBF exports are all derived. To make this deterministic and enforceable, a build pipeline must exist before any symbols are drawn at scale. The pipeline must automate SVG normalization (via SVGO or equivalent), run the automated style-lint gate (checking grid/viewBox, stroke weight, palette, clean SVG — no raster embeds, no external refs, no stray metadata), and produce all required output formats. Without this, style compliance is aspirational rather than machine-enforced, and the 'drawn symbol' milestone cannot be validated.",
+  "objective": "Implement and ship version 0 of the build pipeline: SVG normalize → automated style-lint gate → PNG raster export (multiple sizes) → SVG sprite → OBF export for AAC reuse; all as a runnable, documented TypeScript/ESM pnpm workspace package.",
+  "acceptanceCriteria": [
+    "SVG normalization step (using SVGO or equivalent) produces clean, accessible SVGs with <title> and role=img, removing stray metadata, raster embeds, and external refs.",
+    "Style-lint gate checks each SVG against the design system: canvas/viewBox dimensions, grid alignment, stroke weight, allowed palette, and clean-SVG rules; a non-conforming SVG exits non-zero and is rejected from further pipeline stages.",
+    "PNG export produces at least two standard sizes from SVG source; SVG sprite bundles all passing symbols into a single file.",
+    "OBF export produces a valid Open Board Format file containing passing symbols with concept IDs, labels (from metadata), and CC-BY-4.0 attribution.",
+    "Pipeline is TypeScript/ESM, runs via pnpm, passes pnpm build && pnpm lint, has no secrets in logs or artifacts, and is licensed MIT."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\open-pictograms\\PLAN.md",
+    "Open Board Format (OBF) — open AAC board interchange format",
+    "SVGO — SVG optimizer (open source)",
+    "Creative Commons CC-BY-4.0; MIT License"
+  ],
+  "output": "pipeline/ TypeScript/ESM package in the repo implementing SVG normalize, style-lint, PNG/sprite/OBF export; CI-runnable with pnpm; licensed MIT. PR opened against main with a passing build and lint.",
+  "requestor": "jdev1977",
+  "verifiedNeed": true,
+  "outputLicense": "MIT"
+}

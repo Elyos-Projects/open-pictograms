@@ -1,0 +1,34 @@
+{
+  "id": "open-pictograms-code-006",
+  "title": "Interop: Global Symbols import / OBF round-trip validation",
+  "project": "open-pictograms",
+  "type": "code",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["accessibility", "communication", "open-culture", "tooling"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "For open-pictograms to be part of the open AAC ecosystem, it must interoperate with Global Symbols (the largest open symbol reference database) and confirm that its OBF export round-trips cleanly through OBF-consuming tools (e.g. CoughDrop-style board builders). This task implements a Global Symbols import adapter (to pull in or cross-reference Concept Coding IDs for interop), validates the OBF round-trip, and documents confirmed interoperability with at least one external ecosystem.",
+  "objective": "Implement the Global Symbols import adapter and OBF round-trip validation, confirming interoperability with at least one external AAC ecosystem; publish the interop evidence.",
+  "acceptanceCriteria": [
+    "Global Symbols / Concept Coding ID cross-references are populated in interopRefs metadata fields for at least the core communication vocabulary (batch-001 symbols); the mapping logic is documented.",
+    "OBF round-trip validation: an OBF file exported by the pipeline is imported into at least one OBF-consuming tool or validator; the round-trip result (import success, any data loss or format issues) is documented.",
+    "Adapter lives in adapters/ (per Elyos architecture); contains no vendor-specific logic outside the adapter directory; is TypeScript/ESM, pnpm-based, passes pnpm build && pnpm lint, licensed MIT.",
+    "Interop evidence document confirms compatibility with ≥1 external ecosystem; any format gaps or compatibility issues are recorded with remediation notes.",
+    "PR includes the adapter code, interop evidence document, and updated metadata records with interopRefs populated."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\open-pictograms\\PLAN.md",
+    "open-pictograms-code-003 (OBF export adapter)",
+    "Global Symbols / Open Symbols / Concept Coding — open AAC interoperability ecosystem",
+    "Open Board Format (OBF) — open AAC board interchange format",
+    "MIT License"
+  ],
+  "output": "adapters/global-symbols/ (Global Symbols import adapter), docs/interop-evidence.md (round-trip validation results), and updated metadata records with interopRefs; all licensed MIT (code) and CC-BY-4.0 (docs/data). PR opened against main.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

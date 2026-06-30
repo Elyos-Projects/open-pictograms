@@ -1,0 +1,35 @@
+{
+  "id": "open-pictograms-batch-005",
+  "title": "Additional facility wayfinding inventories (clinic/shelter/school/transit)",
+  "project": "open-pictograms",
+  "type": "data",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["accessibility", "wayfinding", "open-culture", "design"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "M1 delivers a wayfinding inventory for one facility type (batch-002). This backlog task extends wayfinding coverage to additional facility types — clinic, shelter, school, and transit — based on partner demand. Each facility type has distinct zone layouts, service types, and directional needs. The task is unscheduled and activated per-partner demand; if a partner requests a specific facility type, the relevant inventory is scoped and batched. All symbols follow the same quality bar as batch-002.",
+  "objective": "Draw, lint, comprehension-test, culturally-review, and export wayfinding symbol inventories for additional facility types (clinic, shelter, school, transit) as demand is confirmed by partners or users.",
+  "acceptanceCriteria": [
+    "At least one additional facility type's complete wayfinding inventory is drawn and tested; the facility type is documented and linked to a confirmed partner or user demand.",
+    "All symbols are original vector geometry with originality attestation; RTL/mirror directional variants produced for directional symbols; all pass the style-lint gate and CI build.",
+    "Each shipped symbol has a recorded comprehensionScore at ≥67% correct comprehension with the target population for the facility type; below-threshold symbols are redesigned and retested or withheld.",
+    "Cultural review completed for all people/place/gesture symbols; metadata and provenance records complete; no license or originality violations.",
+    "Each facility-type inventory is published as a clearly scoped dataset with a documented facility type, use context, and partner/demand source."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\open-pictograms\\PLAN.md",
+    "open-pictograms-batch-002 (M1 single-facility wayfinding inventory — template)",
+    "open-pictograms-code-002 (CI build automation)",
+    "open-pictograms-writing-002 (reviewer workflow + cultural-review checklist)",
+    "AIGA/DOT Symbol Signs (public domain)",
+    "Creative Commons CC-BY-4.0"
+  ],
+  "output": "symbols/wayfinding/<facility-type>/ (original SVGs), metadata/ (JSON records with comprehension scores), and CI-generated exports; all CC-BY-4.0. PR opened against main per facility-type batch.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

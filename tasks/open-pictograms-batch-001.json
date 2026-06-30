@@ -1,0 +1,37 @@
+{
+  "id": "open-pictograms-batch-001",
+  "title": "Draw + test core communication vocabulary (~60 symbols)",
+  "project": "open-pictograms",
+  "type": "data",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["accessibility", "communication", "open-culture", "design"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "The M1 goal of ≥100 shipped symbols requires a core communication vocabulary anchored in an AAC core-word list covering the primary concepts non-speaking and low-literacy people need most: needs, actions, feelings, people, places, time, and health basics. Each symbol must be original geometry, pass the automated style-lint gate, clear comprehension testing at ≥67% correct with the target population, pass cultural/dignity review for any people/body/concept symbol, and export to all formats with complete metadata. This task is the primary content deliverable of M1.",
+  "objective": "Draw, lint, comprehension-test, culturally-review, and export approximately 60 symbols covering an AAC/low-literacy core communication vocabulary; reaching the M1 threshold of ≥67% correct comprehension with the target population for each shipped symbol.",
+  "acceptanceCriteria": [
+    "Approximately 60 symbols covering AAC/low-literacy core vocabulary: needs (food, water, toilet, sleep, pain, help), actions (eat, drink, go, stop, want, no), feelings (happy, sad, scared, angry, tired), people (woman, man, child, doctor, family), places (hospital, home, school, bus), time (morning, now, later), and health basics; no arbitrary filler symbols.",
+    "All symbols are original vector geometry with originality attestation in provenance; any permitted reference (AIGA/DOT PD) documented; no NC/SA/proprietary source used.",
+    "All symbols pass the automated style-lint gate and CI build; each exports cleanly to SVG/PNG/sprite/OBF with complete metadata records.",
+    "Each shipped symbol has a recorded comprehensionScore at ≥67% correct comprehension with the target population (AAC users, low-literacy adults, or equivalent); below-threshold symbols are redesigned and retested or withheld from this release.",
+    "People/body/concept symbols are culturally reviewed and cleared (or regional variants produced); all metadata and provenance records are complete; no license or originality violations."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\open-pictograms\\PLAN.md",
+    "open-pictograms-code-002 (CI build automation)",
+    "open-pictograms-writing-002 (reviewer workflow + cultural-review checklist)",
+    "open-pictograms-design-001 (design system v1)",
+    "open-pictograms-data-001 (per-symbol metadata schema)",
+    "open-pictograms-writing-001 (comprehension-test protocol)",
+    "AIGA/DOT Symbol Signs (public domain)",
+    "Creative Commons CC-BY-4.0"
+  ],
+  "output": "symbols/ (~60 original SVGs), metadata/ (~60 JSON records with comprehension scores), testing/ (aggregated de-identified comprehension results), and CI-generated exports (PNG/sprite/OBF); all CC-BY-4.0. PR opened against main.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

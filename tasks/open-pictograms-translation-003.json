@@ -1,0 +1,33 @@
+{
+  "id": "open-pictograms-translation-003",
+  "title": "Expand to additional low-resource languages",
+  "project": "open-pictograms",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["accessibility", "communication", "open-culture", "multilingual"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "translation",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "The M2 label target (≥3 languages) is a floor, not a ceiling. Low-resource languages — those with few digital tools, limited machine-translation quality, and high populations of low-literacy or displaced speakers — are the highest-need targets for vetted label sets. Expanding to additional low-resource languages requires finding fluent reviewer volunteers or partners for each language, since raw machine-translation cannot be shipped and low-resource languages have higher MT error rates. This task is backlogged until fluent reviewers are identified per locale.",
+  "objective": "Expand the vetted label set to additional low-resource languages (beyond M2's ≥3 language baseline), each reviewed by a fluent speaker with provenance recorded, contingent on identified fluent reviewers.",
+  "acceptanceCriteria": [
+    "Labels delivered for at least one additional low-resource language beyond the M2 baseline; language choice is documented and linked to an identified fluent reviewer and a clear beneficiary population need.",
+    "Each label reviewed by a fluent speaker of that language; reviewer name/role/locale recorded in metadata; no raw machine-translation shipped.",
+    "Where the language has limited MT tooling, the review process accommodates direct human-authored labels (not MT-then-review); the method used is documented in reviewer provenance.",
+    "Labels are published in labels/<lang>/ with reviewer provenance, versioned, and licensed CC-BY-4.0.",
+    "Symbols remain fully usable without the label; the label expansion does not alter any SVG source or comprehension testing records."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\open-pictograms\\PLAN.md",
+    "open-pictograms-translation-002 (M2 labels in ≥3 languages — build on existing)",
+    "open-pictograms-data-001 (per-symbol metadata schema — labels field with reviewer provenance)",
+    "Creative Commons CC-BY-4.0"
+  ],
+  "output": "labels/<lang>/ (additional low-resource language label files with reviewer provenance) integrated into per-symbol metadata records; versioned and licensed CC-BY-4.0. PR opened against main per language batch.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

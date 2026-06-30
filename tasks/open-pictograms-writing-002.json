@@ -1,0 +1,33 @@
+{
+  "id": "open-pictograms-writing-002",
+  "title": "Reviewer workflow + cultural-review checklist + safety-review SOP",
+  "project": "open-pictograms",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["accessibility", "communication", "open-culture", "design"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "For M1 batch production (60+ communication symbols and 40+ wayfinding symbols), the review process must be repeatable and consistent across multiple reviewers. The reviewer workflow must document how a new symbol moves from 'drawn' through style review, cultural review, and (for the safety subset) safety expert review to 'shipped'. The cultural-review checklist operationalises the dignity and non-discrimination rules from the design system. The safety-review SOP specifies the domain-expert sign-off process and disclaimer attachment.",
+  "objective": "Document and publish the end-to-end reviewer workflow, the cultural-review checklist, and the safety-review SOP so that reviewer rotation in M1 is consistent and auditable.",
+  "acceptanceCriteria": [
+    "Reviewer workflow covers the full review path: style review (automated lint + manual check) → cultural/dignity review → comprehension-test coordination → safety expert review (safety subset) → final 'shipped' sign-off; each stage has a clear owner role and an explicit pass/fail outcome.",
+    "Cultural-review checklist operationalises the design-system do/don't rules: checks for stereotype, offense, cross-cultural legibility, disability-community norms, regional/directional variants, and whether a symbol depicting a person or body part has been reviewed by a culturally-knowledgeable reviewer.",
+    "Safety-review SOP specifies: who qualifies as a domain expert for the safety subset, what sign-off looks like (name/role recorded in provenance), the 'not certified safety signage / not medical advice' disclaimer text and how it attaches to every safety-aligned symbol.",
+    "Document is structured so that ≥2 reviewers and ≥1 cultural reviewer can be onboarded using it alone, with no oral briefing required.",
+    "Published in docs/ and licensed CC-BY-4.0."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\open-pictograms\\PLAN.md",
+    "open-pictograms-design-001 (design system v1)",
+    "open-pictograms-writing-001 (comprehension-test protocol)",
+    "Creative Commons CC-BY-4.0"
+  ],
+  "output": "docs/reviewer-workflow.md + docs/cultural-review-checklist.md + docs/safety-review-sop.md (or equivalent combined document); versioned and licensed CC-BY-4.0.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

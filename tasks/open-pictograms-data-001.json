@@ -1,0 +1,33 @@
+{
+  "id": "open-pictograms-data-001",
+  "title": "Define per-symbol metadata schema + originality/license policy",
+  "project": "open-pictograms",
+  "type": "data",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["accessibility", "communication", "open-culture", "design"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Every symbol in open-pictograms must carry a machine-readable metadata record — covering concept identity, category, multilingual labels, comprehension scores, cultural-review status, safety class, license, and provenance — so that downstream tools (build pipeline, catalog site, OBF exporter, validation harness) can operate without manual intervention. An originality/license policy must accompany the schema so contributors know exactly what visual references are permitted and how to record an originality attestation.",
+  "objective": "Author and publish the per-symbol metadata schema (JSON Schema or equivalent) and the accompanying originality/license policy that all draw/batch tasks will follow when creating and submitting symbol metadata records.",
+  "acceptanceCriteria": [
+    "Schema covers all required fields: conceptId, category, interopRefs, labels (with reviewer provenance), svgSource, variants, styleConformance, safetyClass, referencedStandard, comprehensionScore, culturalReview, license, attribution, provenance, disclaimer, and status.",
+    "Schema is machine-readable (JSON Schema draft-07 or later) and validated by the build pipeline; an invalid metadata record fails the build.",
+    "Originality/license policy is co-published: permitted references (AIGA/DOT PD) named; NC/SA and proprietary sources explicitly excluded; originality attestation field required in provenance.",
+    "Policy states the required attribution string format and how it must travel with every export bundle.",
+    "Schema and policy are versioned, published in the repo (metadata/schema.json + docs), and licensed CC-BY-4.0."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\open-pictograms\\PLAN.md",
+    "AIGA/DOT Symbol Signs (public domain)",
+    "Creative Commons CC-BY-4.0",
+    "Open Board Format (OBF) — open AAC board interchange format"
+  ],
+  "output": "metadata/schema.json (machine-readable per-symbol metadata schema) and metadata/LICENSE-POLICY.md (originality/license policy with attribution requirements), both versioned and licensed CC-BY-4.0.",
+  "requestor": "jdev1977",
+  "verifiedNeed": true,
+  "outputLicense": "CC-BY-4.0"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "open-pictograms-research-004",
+  "title": "Legal review: AI-artwork copyrightability → CC-BY vs CC0",
+  "project": "open-pictograms",
+  "type": "research",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["accessibility", "open-culture", "design"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "PLAN.md flags an open question: if a symbol is substantially AI-authored, can CC-BY-4.0 meaningfully attach (requiring attribution to a human author), or should such artwork be dedicated to CC0 (maximising frictionless AAC reuse)? This has practical consequences: some AAC platforms prefer CC0 for frictionless integration; CC-BY requires attribution strings to travel with every export. A brief legal research review is needed before the first major release to resolve this open question and document the rationale for the chosen license approach.",
+  "objective": "Research and document the current legal landscape for AI-generated/AI-assisted artwork copyrightability and the practical implications for the CC-BY-4.0 vs CC0 license decision for open-pictograms.",
+  "acceptanceCriteria": [
+    "Reviews the current legal landscape on AI-artwork copyrightability in key jurisdictions (at minimum: US and EU), summarising the current state of law and significant recent rulings or guidance as of the research date.",
+    "Assesses the practical implications for open-pictograms: whether CC-BY-4.0 can meaningfully attach to substantially AI-authored pictograms, and what 'author' or 'creator' means in that context for the attribution string.",
+    "Evaluates the CC-BY-4.0 vs CC0 choice from the perspective of (a) AAC platform reuse (prefer CC0), (b) attribution/provenance integrity (prefer CC-BY), and (c) legal risk (which is safer given the copyrightability uncertainty).",
+    "Recommends a license approach (CC-BY-4.0, CC0, or a hybrid per symbol based on authorship) with justification; and states what provenance/originality-attestation records should be kept regardless of the chosen license.",
+    "Research output is published in docs/legal-review-license.md and licensed CC-BY-4.0; cites sources; notes that it is a research memo, not legal advice."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\open-pictograms\\PLAN.md",
+    "Creative Commons CC-BY-4.0 and CC0 license texts",
+    "US Copyright Office guidance on AI-generated works",
+    "EU AI Act and copyright implications (where relevant)"
+  ],
+  "output": "docs/legal-review-license.md — a research memo on AI-artwork copyrightability and the CC-BY vs CC0 license decision; licensed CC-BY-4.0.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

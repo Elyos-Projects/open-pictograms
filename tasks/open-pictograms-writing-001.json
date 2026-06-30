@@ -1,0 +1,33 @@
+{
+  "id": "open-pictograms-writing-001",
+  "title": "Write the ISO 9186-based comprehension-test + consent/ethics protocol",
+  "project": "open-pictograms",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["accessibility", "communication", "open-culture"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The defining constraint of open-pictograms is comprehension-first: a symbol our target users cannot read is not a symbol. Before any symbol can be declared 'communication-ready', it must pass a comprehension test with the target population. This protocol operationalises the ISO 9186 method and adds consent/ethics safeguards for vulnerable populations (low-literacy adults, AAC users with disabilities, minors). Without this protocol, draw/batch tasks have no standardised scoring method and cannot record comparable, auditable comprehension evidence.",
+  "objective": "Write and publish the comprehension-test and consent/ethics protocol (ISO 9186-based) that all draw/batch tasks will follow when running or commissioning comprehension tests and recording results.",
+  "acceptanceCriteria": [
+    "Operationalises the ISO 9186-1 comprehension test and judgement test, with explicit scoring fields: correct%, critical-confusion%, n, population, method (comprehension vs judgement), and date; and the use-dependent thresholds: ≥67% correct for general symbols, ≥85% correct and <5% critical confusion for safety-aligned symbols.",
+    "Specifies the redesign-and-retest loop: symbols below threshold are redesigned and retested, never shipped 'good enough'; the safety-aligned subset is withdrawn if it cannot meet its stricter bar after iteration.",
+    "Specifies informed/supported consent procedures, including guardian/supported consent for minors and people with intellectual or communication disabilities; requires deference to a partner's ethics process or IRB where one applies.",
+    "Mandates aggregate, de-identified results only; prohibits storing names, faces, or identifying information with responses; limits raw session media (if any) to ephemeral, non-published storage.",
+    "Defines the comprehensionScore record format (method, n, population, correctPct, criticalConfusionPct, date) so scores are reproducible and comparable across symbols and revisions; published and licensed CC-BY-4.0."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\open-pictograms\\PLAN.md",
+    "ISO 9186 (graphical-symbol comprehensibility method — reference only, not redistributed)",
+    "ISO 3864-3 / ANSI Z535.3 (safety-sign comprehension criteria — concepts only)",
+    "Creative Commons CC-BY-4.0"
+  ],
+  "output": "testing/comprehension-protocol.md — the ISO 9186-based comprehension-test and consent/ethics protocol, including scoring rubric, comprehensionScore record format, redesign-and-retest loop, and vulnerable-population consent safeguards; versioned and licensed CC-BY-4.0.",
+  "requestor": "jdev1977",
+  "verifiedNeed": true,
+  "outputLicense": "CC-BY-4.0"
+}

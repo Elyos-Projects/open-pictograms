@@ -1,0 +1,37 @@
+{
+  "id": "open-pictograms-batch-004",
+  "title": "Safety-aligned subset (expert-signed, stricter threshold, disclaimered)",
+  "project": "open-pictograms",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["accessibility", "communication", "wayfinding", "open-culture", "design"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Safety/hazard/emergency/medication-related pictograms can cause harm if misunderstood — a misread 'do not drink this water' or 'emergency exit' symbol is dangerous. This subset is treated as medium risk with a privileged pipeline: stricter comprehension threshold (≥85% correct + <5% critical confusion), mandatory domain-expert sign-off, original geometry aligned to recognized concepts (AIGA/DOT PD, ISO 7010/7001/GHS concepts — no copied artwork), and an explicit 'not certified safety signage / not medical advice' disclaimer on every symbol. A safety symbol that fails its threshold is redesigned or withdrawn, never shipped.",
+  "objective": "Draw, lint, expert-review, comprehension-test, and export the safety-aligned subset; each symbol meeting the stricter ≥85% correct / <5% critical-confusion threshold with domain-expert sign-off and disclaimer.",
+  "acceptanceCriteria": [
+    "Each safety symbol aligns to recognized concepts (AIGA/DOT PD references, ISO 7010/7001/GHS concept meanings — no copied artwork) and is original geometry with originality attestation in provenance.",
+    "Meets the stricter comprehension bar: ≥85% correct comprehension and <5% critical confusion with the target population; any symbol failing this threshold is redesigned and retested or withdrawn — never shipped below threshold.",
+    "Each symbol has domain-expert sign-off recorded in provenance (expert name/role/date); the 'not certified safety signage / not medical advice' disclaimer is attached to every safety-aligned symbol in the metadata disclaimer field.",
+    "Safety symbols are excluded from the general batch pipeline run; they follow the safety-review SOP (writing-002) and are reviewed separately before merging.",
+    "Provenance is complete and auditable; no license or originality violations; all symbols export cleanly through the CI pipeline."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\open-pictograms\\PLAN.md",
+    "open-pictograms-writing-002 (safety-review SOP)",
+    "open-pictograms-batch-001 (core communication vocabulary — for context on what is already covered)",
+    "AIGA/DOT Symbol Signs (public domain)",
+    "ISO 7010 (safety signs — concepts only, standard not redistributed)",
+    "ISO 7001 (public information symbols — concepts only)",
+    "GHS (hazard pictograms — concepts only)",
+    "Creative Commons CC-BY-4.0"
+  ],
+  "output": "symbols/safety/ (original SVGs for the safety-aligned subset), metadata/ (JSON records with comprehensionScore, expert sign-off, and disclaimer fields), and CI-generated exports; all CC-BY-4.0 with disclaimer text. PR opened against main.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

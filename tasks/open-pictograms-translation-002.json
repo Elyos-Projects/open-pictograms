@@ -1,0 +1,34 @@
+{
+  "id": "open-pictograms-translation-002",
+  "title": "Localize labels to ≥3 languages + regional/directional variants",
+  "project": "open-pictograms",
+  "type": "writing",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["accessibility", "communication", "open-culture", "multilingual"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "translation",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "M2 requires vetted labels in ≥3 languages, building on the ≥2 languages delivered in M1 (translation-001), and extending to the full batch-003 symbol set (≥300 symbols). Regional variants are required where a symbol's label or visual meaning differs by region (e.g. different terms for medical facilities, food, or gestures). Directional labels (e.g. 'left', 'right') must account for RTL vs LTR script rendering. As with M1, no raw machine-translation ships and fluent-human reviewer provenance is mandatory.",
+  "objective": "Produce and publish fluent-reviewed label sets for the full ≥300-symbol set (batch-003) in at least 3 languages, including regional label variants where meaning or terminology differs by locale.",
+  "acceptanceCriteria": [
+    "Labels delivered for ≥3 languages beyond English, covering the full batch-003 symbol set (≥300 symbols); language selections are documented and prioritised by target-population need and partner channel requirements.",
+    "Regional variants produced where label or visual meaning differs by locale (e.g. different regional terms for the same concept, or culturally-specific labels for directional or facility symbols).",
+    "Each label reviewed by a fluent speaker of that language; reviewer name/role/locale recorded in the metadata labels field for every label; no raw machine-translation shipped.",
+    "Directional symbols have RTL and LTR label variants where script direction affects label placement or meaning.",
+    "Label sets published in labels/<lang>/ with reviewer provenance, versioned, and licensed CC-BY-4.0."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\open-pictograms\\PLAN.md",
+    "open-pictograms-batch-003 (≥300 shipped symbols)",
+    "open-pictograms-translation-001 (M1 labels in ≥2 languages — build on existing)",
+    "open-pictograms-data-001 (per-symbol metadata schema — labels field with reviewer provenance)",
+    "Creative Commons CC-BY-4.0"
+  ],
+  "output": "labels/<lang>/ (expanded label files for ≥3 languages with regional variants and reviewer provenance) integrated into per-symbol metadata records; versioned and licensed CC-BY-4.0. PR opened against main.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

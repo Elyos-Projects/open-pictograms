@@ -1,0 +1,37 @@
+{
+  "id": "open-pictograms-draw-001",
+  "title": "Draw + test the 12-symbol seed set (communication/wayfinding/cultural/safety)",
+  "project": "open-pictograms",
+  "type": "data",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["accessibility", "communication", "wayfinding", "open-culture", "design"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The M0 seed set must prove that a symbol can travel the full pipeline end-to-end — concept → drawn → style-lint passed → tested with real users → exported → toward deployment. The seed set must exercise every path, not 12 easy icons: several everyday communication symbols, several wayfinding symbols, at least one culturally-variable concept (to exercise cultural review + regional variant), and at least one safety-aligned symbol (to exercise the stricter comprehension threshold + domain-expert review + disclaimer). Without this, M0 cannot exit and the foundational proof-of-concept is incomplete.",
+  "objective": "Draw, style-lint, comprehension-test, culturally-review, and export the 12-symbol seed set spanning the four required paths: communication, wayfinding, culturally-variable, and safety-aligned.",
+  "acceptanceCriteria": [
+    "Seed set spans all four required paths: ≥2 everyday communication symbols, ≥2 wayfinding symbols, ≥1 culturally-variable concept (with a documented regional variant), and ≥1 safety-aligned symbol; no trivially easy or arbitrary icon set.",
+    "All 12 symbols are original vector geometry; originality attestation recorded in provenance; any permitted visual reference (AIGA/DOT PD) documented; no NC/SA/proprietary source used.",
+    "All 12 symbols pass the style-lint gate (grid/stroke/palette/clean-SVG) and export cleanly to SVG/PNG/sprite/OBF with complete metadata records.",
+    "At least 1 comprehension pilot run with members of the target population (or, if participant access is not yet available, an honestly-labeled judgement-test pilot); results recorded in comprehensionScore fields with method, n, population, correctPct, and date.",
+    "The safety-aligned symbol has domain-expert review recorded in provenance and carries the 'not certified safety signage / not medical advice' disclaimer; at least 1 symbol has completed cultural review and is cleared."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\open-pictograms\\PLAN.md",
+    "open-pictograms-design-001 (design system v1)",
+    "open-pictograms-data-001 (per-symbol metadata schema)",
+    "open-pictograms-writing-001 (comprehension-test protocol)",
+    "open-pictograms-research-002 (license/originality rules)",
+    "open-pictograms-code-001 (build pipeline v0)",
+    "AIGA/DOT Symbol Signs (public domain)",
+    "Creative Commons CC-BY-4.0"
+  ],
+  "output": "symbols/ (12 original SVG source files), metadata/ (12 per-symbol JSON records with comprehension scores and provenance), testing/ (pilot results, de-identified and aggregate), and exports (PNG/sprite/OBF); all CC-BY-4.0. PR opened against main.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

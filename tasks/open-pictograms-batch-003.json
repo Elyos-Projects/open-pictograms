@@ -1,0 +1,36 @@
+{
+  "id": "open-pictograms-batch-003",
+  "title": "Scale to ≥300 shipped symbols across categories",
+  "project": "open-pictograms",
+  "type": "data",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["accessibility", "communication", "wayfinding", "open-culture", "design"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "M2 requires ≥300 shipped symbols to achieve broad coverage across communication and wayfinding categories. Building on the M1 core vocabulary (~60 symbols) and facility wayfinding inventory (~40 symbols), this task extends coverage to the full category list: additional communication categories not covered in M1 (environment, nature, transport, technology), expanded AAC vocabulary, and additional wayfinding inventories from subsequent facility types. All symbols must meet the same quality bar: original geometry, style-lint passed, comprehension tested, culturally reviewed.",
+  "objective": "Extend the symbol set from the M1 baseline (~100 symbols) to ≥300 shipped symbols across the full category breadth: communication, wayfinding, health, people, actions, emotions, places, time, and transport; all comprehension-tested and culturally reviewed.",
+  "acceptanceCriteria": [
+    "At least 300 total shipped symbols spanning communication, wayfinding, and related categories; symbols fill documented gaps in the AAC core-word list and the target facility wayfinding inventories beyond M1's single facility type.",
+    "All new symbols are original vector geometry with originality attestation; any AIGA/DOT PD references documented; no NC/SA/proprietary source used.",
+    "All symbols pass the automated style-lint gate and CI build; each exports cleanly to SVG/PNG/sprite/OBF with complete metadata records.",
+    "Each shipped symbol has a recorded comprehensionScore at ≥67% correct comprehension with the target population; below-threshold symbols are redesigned and retested or withheld.",
+    "People/body/concept symbols culturally reviewed and cleared; no unresolved cultural flag in any released symbol; no license or originality violations."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\open-pictograms\\PLAN.md",
+    "open-pictograms-batch-001 (core communication vocabulary)",
+    "open-pictograms-batch-002 (facility wayfinding inventory)",
+    "open-pictograms-code-002 (CI build automation)",
+    "open-pictograms-writing-002 (reviewer workflow + cultural-review checklist)",
+    "AIGA/DOT Symbol Signs (public domain)",
+    "Creative Commons CC-BY-4.0"
+  ],
+  "output": "symbols/ (≥200 new original SVGs extending the set to ≥300 total), metadata/ (matching JSON records with comprehension scores), and CI-generated exports; all CC-BY-4.0. PR opened against main.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

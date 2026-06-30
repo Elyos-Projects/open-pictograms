@@ -1,0 +1,34 @@
+{
+  "id": "open-pictograms-code-003",
+  "title": "OBF export adapter for AAC board builders",
+  "project": "open-pictograms",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["accessibility", "communication", "open-culture", "tooling"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Open Board Format (OBF) is the open interchange standard used by AAC board builders (e.g. CoughDrop-style apps) to import symbol sets. For open-pictograms to be reusable in the AAC ecosystem, it must export a valid OBF file per symbol or per board, including concept IDs, multilingual labels (from the per-symbol metadata), CC-BY-4.0 attribution, and correct SVG/PNG references. The adapter must live in adapters/obf/ per the Elyos architecture (all ecosystem-specific logic in adapters/).",
+  "objective": "Implement the OBF export adapter (adapters/obf/) that produces valid Open Board Format output from the per-symbol metadata and SVG/PNG exports, ready for import by AAC board builders.",
+  "acceptanceCriteria": [
+    "Adapter produces a valid OBF file (or set of files) from the per-symbol metadata records; OBF output validates against the Open Board Format schema.",
+    "OBF output includes: concept ID mapped to OBF button/symbol fields, multilingual labels from the metadata labels field, CC-BY-4.0 attribution string, and correct SVG and PNG image references.",
+    "Adapter lives in adapters/obf/ (per Elyos architecture); contains no vendor-specific logic outside the adapter directory.",
+    "Adapter is TypeScript/ESM, pnpm-based, passes pnpm build && pnpm lint, is licensed MIT, and is integrated into the build pipeline.",
+    "At least one round-trip test: an OBF output file is generated from the seed set metadata and manually verified to import correctly into an OBF-consuming tool or validator."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\open-pictograms\\PLAN.md",
+    "Open Board Format (OBF) — open AAC board interchange format",
+    "open-pictograms-data-001 (per-symbol metadata schema)",
+    "open-pictograms-code-001 (build pipeline v0)",
+    "MIT License"
+  ],
+  "output": "adapters/obf/ TypeScript/ESM OBF export adapter integrated into the pipeline; licensed MIT. PR opened against main with passing build and lint.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

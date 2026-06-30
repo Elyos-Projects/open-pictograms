@@ -261,3 +261,40 @@ on a partner/delivery channel being secured (unlike the deployment/field-validat
   "outputLicense": "CC-BY-4.0"
 }
 ```
+
+---
+
+## Generated task index
+
+Generated 2026-06-29. All 28 task JSON files in `tasks/` are schema-valid (validated by `validate-tasks.mjs`). The seed file (`open-pictograms-design-001.json`) was pre-existing; 27 new files were generated from the backlog tables above. No fan-out was applied: the concept lists required to fan out the `*-draw-*` / `*-batch-*` templates are not yet enumerated in this document; each batch task remains a single task file acting as a template.
+
+| ID | Milestone | Type | verifiedNeed |
+|---|---|---|---|
+| open-pictograms-design-001 | M0 | design-spec | true (seed) |
+| open-pictograms-data-001 | M0 | data | true |
+| open-pictograms-writing-001 | M0 | writing | true |
+| open-pictograms-research-001 | M0 | research | false |
+| open-pictograms-research-002 | M0 | research | true |
+| open-pictograms-code-001 | M0 | code | true |
+| open-pictograms-draw-001 | M0 | data | false |
+| open-pictograms-code-002 | M1 | code | false |
+| open-pictograms-code-003 | M1 | code | false |
+| open-pictograms-writing-002 | M1 | writing | false |
+| open-pictograms-batch-001 | M1 | data | false |
+| open-pictograms-batch-002 | M1 | data | false |
+| open-pictograms-translation-001 | M1 | writing | false |
+| open-pictograms-code-004 | M1 | code | false |
+| open-pictograms-batch-003 | M2 | data | false |
+| open-pictograms-batch-004 | M2 | data | false |
+| open-pictograms-translation-002 | M2 | writing | false |
+| open-pictograms-code-005 | M2 | code | false |
+| open-pictograms-research-003 | M2 | research | false |
+| open-pictograms-writing-003 | M3 | writing | false |
+| open-pictograms-code-006 | M3 | code | false |
+| open-pictograms-maint-001 | M3 | maintenance | false |
+| open-pictograms-code-007 | Backlog | code | false |
+| open-pictograms-batch-005 | Backlog | data | false |
+| open-pictograms-translation-003 | Backlog | writing | false |
+| open-pictograms-research-004 | Backlog | research | false |
+| open-pictograms-data-002 | Backlog | data | false |
+| open-pictograms-maint-002 | Backlog | maintenance | false |

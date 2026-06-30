@@ -1,0 +1,35 @@
+{
+  "id": "open-pictograms-research-002",
+  "title": "Verify license/originality rules + allowed references (AIGA/DOT PD; ISO concepts)",
+  "project": "open-pictograms",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["accessibility", "communication", "open-culture", "design"],
+  "riskTier": "medium",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "Before any symbol is drawn, contributors must know exactly which visual references are permitted and how to maintain a clean originality/license record. The key sources in scope are: the AIGA/DOT public-domain symbol set (permitted for direct reference and adaptation), ISO 7001/7010/GHS (concepts/meanings are not copyrightable, but their specific paywalled artwork must not be copied), ARASAAC (excluded: CC-BY-NC-SA), Mulberry/OpenMoji (excluded as inputs: CC-BY-SA). Inadvertent close resemblance to a protected symbol is treated as a stop-the-line license incident. This research task documents these rules clearly so they can be incorporated into the design system, the metadata policy, and the style-lint gate.",
+  "objective": "Produce a clear, verified statement of which visual references are permitted (and in what way), which are excluded, and how to record the originality attestation in provenance — to be embedded in the design system and metadata policy.",
+  "acceptanceCriteria": [
+    "Confirms the AIGA/DOT symbol set public-domain status and permitted uses (direct reference, adaptation); records the source of the PD dedication.",
+    "Clarifies the idea/expression line for ISO 7001, ISO 7010, and GHS: concepts and required meanings are usable; specific artwork from paywalled standards is not copied or traced; documents how to express a standard concept in original geometry.",
+    "Explicitly lists excluded sources (ARASAAC CC-BY-NC-SA, Mulberry/OpenMoji CC-BY-SA, and proprietary/brand symbol sets) and states why each is excluded (license incompatibility or IP risk).",
+    "Defines what constitutes an originality attestation (author/tool, date, any PD/permissive reference used, statement that geometry is original) and how it maps to the provenance field in the metadata schema.",
+    "States the stop-the-line rule for inadvertent resemblance to a protected symbol and the required remediation steps (redesign + record); published in the repo and licensed CC-BY-4.0."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\open-pictograms\\PLAN.md",
+    "AIGA/DOT Symbol Signs (public domain)",
+    "ISO 7001 (public information symbols — concepts only, standard not redistributed)",
+    "ISO 7010 (safety signs — concepts only, standard not redistributed)",
+    "GHS (hazard pictograms — concepts only)",
+    "Creative Commons CC-BY-4.0"
+  ],
+  "output": "docs/license-originality-rules.md — a verified reference document covering permitted visual references (AIGA/DOT PD), excluded sources (NC/SA/proprietary), the idea/expression line for ISO standards, the originality attestation format, and the stop-the-line remediation rule; licensed CC-BY-4.0.",
+  "requestor": "jdev1977",
+  "verifiedNeed": true,
+  "outputLicense": "CC-BY-4.0"
+}
