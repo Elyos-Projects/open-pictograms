@@ -1,0 +1,33 @@
+{
+  "id": "open-pictograms-research-001",
+  "title": "Secure ≥1 partner/validation channel (AAC platform, facility, or NGO)",
+  "project": "open-pictograms",
+  "type": "research",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["accessibility", "communication", "wayfinding", "open-culture"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "open-pictograms has a documented partner gap: no AAC platform has committed to host the set, no facility has committed to install signage, and no community has committed to field-test it with real beneficiaries. Until at least one channel is confirmed, all delivery- and field-validation-dependent tasks carry verifiedNeed=false. The PLAN defines explicit kill/pivot criteria so the project does not mass-produce untested, undeployed symbols. Securing a partner is the blocking prerequisite for deployment and beneficiary validation (M2), not for the foundational M0 artifacts.",
+  "objective": "Evaluate the candidate partner/validation channels in priority order and secure confirmation from at least one channel — or, if none can be secured within the time-box, formally record the kill/pivot criteria and next candidate.",
+  "acceptanceCriteria": [
+    "Evaluates candidate channels in priority order: (1) open AAC platforms / Global Symbols / OBF ecosystem, (2) a facility or humanitarian/education partner (clinic, shelter, school, NGO), (3) Elyos siblings (multilingual-signage-templates, emergency-phrasebooks, easy-read-plus) as internal consumers — with each channel's acceptance posture and confirmation status documented.",
+    "Identifies ≥1 concrete channel confirmed to host, install, or field-test the symbol set; records the channel's required format(s), license preference (CC-BY vs CC0), and any ethics/consent process required for testing with beneficiaries.",
+    "On securing a channel, documents the information needed to flip verifiedNeed=true for tasks targeting that channel (formats, ethics requirements, deployment timeline).",
+    "If no channel is secured within the time-box, formally records the kill/pivot criteria: which channel is next in priority, the revised time-box, and the condition under which the project pauses scaling.",
+    "Research output is published in the repo and licensed CC-BY-4.0."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\open-pictograms\\PLAN.md",
+    "Open Board Format (OBF) — open AAC board interchange format",
+    "Global Symbols / Open Symbols / Concept Coding — open AAC interoperability ecosystem",
+    "Creative Commons CC-BY-4.0"
+  ],
+  "output": "docs/partner-channel.md — a research report documenting candidate channels evaluated (in priority order), the confirmed channel(s) with format/license/ethics requirements, or the formally recorded kill/pivot criteria; licensed CC-BY-4.0.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

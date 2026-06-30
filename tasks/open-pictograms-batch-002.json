@@ -1,0 +1,36 @@
+{
+  "id": "open-pictograms-batch-002",
+  "title": "Draw + test wayfinding inventory for one facility type (~40 symbols)",
+  "project": "open-pictograms",
+  "type": "data",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["accessibility", "wayfinding", "open-culture", "design"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "dataset",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "open-pictograms serves two jobs done well: communication and wayfinding. For M1 to reach ≥100 shipped symbols, a full wayfinding inventory for one facility type (e.g. clinic, shelter, or transit hub) must be drawn and tested alongside the core communication vocabulary. Wayfinding symbols are directional and facility-specific, requiring attention to RTL/mirror variants, universal facility iconography, and local cultural conventions for direction and navigation.",
+  "objective": "Draw, lint, comprehension-test, culturally-review, and export approximately 40 wayfinding symbols covering a complete inventory for one target facility type; each symbol reaching ≥67% correct comprehension with the target population.",
+  "acceptanceCriteria": [
+    "Approximately 40 symbols covering a complete wayfinding inventory for one defined facility type (clinic, shelter, transit hub, or school); the facility type is documented in the task output and is consistent with the partner channel's needs (or with M0's candidate partner list if no partner is yet confirmed).",
+    "Symbols cover: facility zones (entrance, exit, reception, waiting, consultation, toilet, emergency), services (water, food, pharmacy, first aid, information, registration), directions (left, right, straight, up, down), and transport/access modes relevant to the facility.",
+    "All symbols are original vector geometry with originality attestation; RTL/mirror directional variants produced for directional symbols; all pass the automated style-lint gate and CI build.",
+    "Each shipped symbol has a recorded comprehensionScore at ≥67% correct comprehension with the target population; below-threshold symbols are redesigned and retested or withheld.",
+    "Cultural review completed for all people/place/gesture symbols; metadata and provenance records complete; no license or originality violations."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\open-pictograms\\PLAN.md",
+    "open-pictograms-code-002 (CI build automation)",
+    "open-pictograms-writing-002 (reviewer workflow + cultural-review checklist)",
+    "open-pictograms-design-001 (design system v1 — incl. directional variant rules)",
+    "open-pictograms-data-001 (per-symbol metadata schema)",
+    "AIGA/DOT Symbol Signs (public domain)",
+    "Creative Commons CC-BY-4.0"
+  ],
+  "output": "symbols/ (~40 original SVGs including directional variants), metadata/ (~40 JSON records with comprehension scores), testing/ (aggregated de-identified comprehension results), and CI-generated exports (PNG/sprite/OBF); all CC-BY-4.0. PR opened against main.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

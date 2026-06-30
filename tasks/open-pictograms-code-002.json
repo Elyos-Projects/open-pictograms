@@ -1,0 +1,33 @@
+{
+  "id": "open-pictograms-code-002",
+  "title": "CI build automation (lint → PNG/sprite/font/OBF → catalog site)",
+  "project": "open-pictograms",
+  "type": "code",
+  "lane": "donated",
+  "priority": "high",
+  "domain": ["accessibility", "communication", "open-culture", "tooling"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "large",
+  "status": "open",
+  "context": "The manual pipeline from M0 must become a fully automated CI build so that batch symbol production in M1 is reproducible, consistent, and trustworthy. The CI must run style-lint, produce all export formats (PNG sizes, SVG sprite, optional icon font, OBF), regenerate the catalog site, and enforce metadata-schema validation — so that no untested or non-conformant symbol can ship. DCO sign-off enforcement in CI is also required per Elyos conventions.",
+  "objective": "Implement a CI build (e.g. GitHub Actions) that runs, from SVG source, the full pipeline: style-lint → PNG/sprite/OBF export → optional font build → catalog-site regeneration; with metadata-schema validation and DCO enforcement as hard gates.",
+  "acceptanceCriteria": [
+    "One CI command builds, from SVG source, all required formats: PNG at multiple sizes, SVG sprite, OBF, and optional icon font; regenerates the catalog/reference site; runs green in CI on every PR.",
+    "Style-lint failures and metadata-schema violations fail the build; no untested or non-conformant symbol can be merged.",
+    "No secrets appear in CI logs or build artifacts; DCO sign-off is enforced (commit signature check); build output is reproducible.",
+    "CI configuration is TypeScript/ESM, pnpm-based, passes pnpm build && pnpm test && pnpm lint, and is licensed MIT.",
+    "PR includes documentation of how to add a new symbol through the automated pipeline (the author workflow)."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\open-pictograms\\PLAN.md",
+    "open-pictograms-code-001 (build pipeline v0)",
+    "GitHub Actions (CI platform)",
+    "MIT License"
+  ],
+  "output": ".github/workflows/ (CI configuration) and updated pipeline/ package with full automation; licensed MIT. PR opened against main with CI running green.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

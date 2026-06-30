@@ -1,0 +1,34 @@
+{
+  "id": "open-pictograms-research-003",
+  "title": "Field deployment + beneficiary validation with secured partner",
+  "project": "open-pictograms",
+  "type": "research",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["accessibility", "communication", "wayfinding", "open-culture"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "document",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "The project's headline outcome is 'deployed for a real beneficiary', not 'symbols merged'. This task closes the loop between symbol production and real-world use by conducting at least one confirmed deployment with the secured partner from research-001, and conducting beneficiary validation sessions across ≥2 contexts. The consent/ethics protocol from writing-001 must be followed. Findings from validation sessions feed back into design and cultural reviews for future symbols. This task can only proceed once research-001 has confirmed a partner channel.",
+  "objective": "Conduct at least one confirmed real deployment of the symbol set with the secured partner, and run at least 2 beneficiary-validation sessions across ≥2 contexts; report findings and feed them back into the design/review process.",
+  "acceptanceCriteria": [
+    "At least 1 confirmed real deployment: installed signage at a facility, a live AAC board incorporating the symbol set, or a distributed toolkit for a humanitarian/education partner — with the partner name, deployment context, and date recorded.",
+    "At least 2 beneficiary-validation sessions across ≥2 contexts (e.g. a low-literacy or AAC user, and facility staff); findings (usability observations, comprehension issues, cultural feedback) recorded in aggregate, de-identified form per the writing-001 protocol.",
+    "Consent and de-identification honored per the M0 comprehension-test and consent/ethics protocol (writing-001); no identifying participant data published.",
+    "Validation findings are documented and fed back into the design system, cultural-review checklist, and/or symbol review queues as actionable items.",
+    "Research output is published in docs/field-validation/ and licensed CC-BY-4.0."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\open-pictograms\\PLAN.md",
+    "open-pictograms-research-001 (secured partner channel — prerequisite)",
+    "open-pictograms-batch-003 (≥300 shipped symbols — deployment content)",
+    "open-pictograms-writing-001 (comprehension-test + consent/ethics protocol)",
+    "Creative Commons CC-BY-4.0"
+  ],
+  "output": "docs/field-validation/deployment-report.md — a field-validation report documenting the confirmed deployment(s), beneficiary-validation session findings (aggregate, de-identified), and action items fed back into design/review; licensed CC-BY-4.0.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "CC-BY-4.0"
+}

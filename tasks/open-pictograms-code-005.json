@@ -1,0 +1,33 @@
+{
+  "id": "open-pictograms-code-005",
+  "title": "Printable signage-sheet adapter (ties to multilingual-signage-templates)",
+  "project": "open-pictograms",
+  "type": "code",
+  "lane": "donated",
+  "priority": "medium",
+  "domain": ["accessibility", "wayfinding", "open-culture", "multilingual", "tooling"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "medium",
+  "status": "open",
+  "context": "Clinics, shelters, schools, and transit agencies in low-resource settings need printable signage sheets they can produce locally without a design team. The signage-sheet adapter bridges open-pictograms (the symbol source) and the multilingual-signage-templates sibling project (the print layout system). The adapter must live in adapters/signage/ per the Elyos architecture and must generate print-ready layouts with symbols, multilingual labels, and correct CC-BY-4.0 attribution.",
+  "objective": "Implement the printable signage-sheet adapter (adapters/signage/) that generates print-ready signage layouts from open-pictograms symbols and labels, compatible with the multilingual-signage-templates sibling project.",
+  "acceptanceCriteria": [
+    "Adapter generates print-ready signage sheets (PDF or SVG layout) from a configurable set of symbols and their multilingual labels; output is suitable for local printing without a design tool.",
+    "Adapter integrates with the multilingual-signage-templates sibling project's layout format; the integration point is documented (input format, output format, how to use both projects together).",
+    "Each sheet includes CC-BY-4.0 attribution for the symbols (attribution string from metadata records) and supports configurable language selection from available vetted label sets.",
+    "Adapter lives in adapters/signage/ (per Elyos architecture); contains no vendor-specific or layout-tool-specific logic outside the adapter directory.",
+    "Adapter is TypeScript/ESM, pnpm-based, passes pnpm build && pnpm lint, is licensed MIT, and is integrated into the CI build pipeline."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\open-pictograms\\PLAN.md",
+    "open-pictograms-code-002 (CI build automation)",
+    "Elyos sibling: multilingual-signage-templates",
+    "Creative Commons CC-BY-4.0 (symbol assets); MIT License (adapter code)"
+  ],
+  "output": "adapters/signage/ TypeScript/ESM signage-sheet adapter; licensed MIT. PR opened against main with passing CI build and lint.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}

@@ -1,0 +1,33 @@
+{
+  "id": "open-pictograms-maint-001",
+  "title": "Versioned releases + changelog + outcome-tracking of deployments",
+  "project": "open-pictograms",
+  "type": "maintenance",
+  "lane": "donated",
+  "priority": "low",
+  "domain": ["accessibility", "communication", "open-culture", "tooling"],
+  "riskTier": "low",
+  "urgent": false,
+  "deliverable": "pr",
+  "tokenEstimate": "small",
+  "status": "open",
+  "context": "For open-pictograms to sustain beyond the initial production push, it must have a versioned release process and a lightweight outcome-tracking system. Versioned releases (using the Elyos changeset convention) allow downstream consumers to pin to a known-good version; a changelog records what changed and why. Outcome-tracking records which partners are using which symbols in which deployments, keeping 'delivered' impact visible after the active development phase ends.",
+  "objective": "Implement versioned releases (using the Elyos changeset/semver convention), a CHANGELOG, and a lightweight outcome-tracking record for deployments; integrate into the CI build.",
+  "acceptanceCriteria": [
+    "Versioned releases use the Elyos changeset convention (changeset for user-facing changes); release tags are created in CI; each release includes a complete changelog entry listing added/changed/removed symbols and pipeline changes.",
+    "CHANGELOG.md is maintained and updated by CI on release; format is human-readable and machine-parseable.",
+    "Outcome-tracking record (docs/deployments.md or equivalent) lists confirmed deployments: partner name/type, deployment context, symbol set version, date, and (if available) beneficiary-validation notes — kept current as new deployments are confirmed.",
+    "Release process is documented in CONTRIBUTING.md or docs/release-process.md so maintainer rotation can follow it without oral briefing.",
+    "No secrets or PII in release artifacts or the CI release workflow; DCO sign-off enforced; licensed MIT (pipeline code)."
+  ],
+  "resources": [
+    "C:\\code\\elyos\\planning\\projects\\open-pictograms\\PLAN.md",
+    "open-pictograms-code-002 (CI build automation)",
+    "Changesets (versioning tool)",
+    "MIT License"
+  ],
+  "output": "CHANGELOG.md, docs/release-process.md, docs/deployments.md, and CI release workflow in .github/workflows/; licensed MIT. PR opened against main with CI running green.",
+  "requestor": "jdev1977",
+  "verifiedNeed": false,
+  "outputLicense": "MIT"
+}
